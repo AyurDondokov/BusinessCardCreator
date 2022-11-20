@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Visit Card Creator	</title>
+		<script src="./scripts/app.js"></script>
+		<link href="./css/style.css" rel="stylesheet" type=" text/css"/>
+	</head>
+	<body class="bg-gray">
+	<div class="card-container">
+		<div class="card-form">
+			<form class="form" onsubmit="submitForm(this); return false;">
+				<h1 class="card-header">Конструктор визиток</h1>
+				<div class="form__field">
+					<label class="form__label">Наименование организации:</label>
+					<input type="text" name="organization" class="form__control" value="ООО &quot;Ориентир&quot;">
+
+					<label class="form__label">ФИО:</label>
+					<input type="text" name="fio" class="form__control" value="Дондоков Аюр Баиртоевич">
+					<div class="form_radio_color">
+						<input class="radio-color" type="radio" name="radio-fio" value="#474747" checked>
+						<input class="radio-color" type="radio" name="radio-fio" value="#3F88E8">
+						<input class="radio-color" type="radio" name="radio-fio" value="#E83F56">
+						<input class="radio-color" type="radio" name="radio-fio" value="#097A14">
+						<input class="radio-color" type="radio" name="radio-fio" value="#DCA40A">
+						<input class="radio-color" type="radio" name="radio-fio" value="#DC0AD5">
+					</div>
+
+					<label class="form__label">Должность:</label>
+					<input type="text" name="position" class="form__control" value="Разработчик">
+					<div class="form_radio_text_align">
+						<input class="radio-text" type="radio" name="radio-position-align" value="left">
+						<input class="radio-text" type="radio" name="radio-position-align" value="center" checked>
+						<input class="radio-text" type="radio" name="radio-position-align" value="right">
+					</div>
+					<div class="form_radio_text_size">
+						<input class="radio-text size" type="radio" name="radio-position-size" value="14px">
+						<input class="radio-text size" type="radio" name="radio-position-size" value="16px" checked>
+						<input class="radio-text size" type="radio" name="radio-position-size" value="18px">
+					</div>
+					<div class="form_radio_color">
+						<input class="radio-color" type="radio" name="radio-position" value="#474747" checked>
+						<input class="radio-color" type="radio" name="radio-position" value="#202020">
+						<input class="radio-color" type="radio" name="radio-position" value="#636363">
+						<input class="radio-color" type="radio" name="radio-position" value="#9E9E9E">
+						<input class="radio-color" type="radio" name="radio-position" value="#BBBBBB">
+						<input class="radio-color" type="radio" name="radio-position" value="#E3E3E3">
+					</div>
+
+					<label class="form__label">Телефон:</label>
+					<input type="text" name="phone" class="form__control" value="89240000000">
+
+					<label class="form__label">Электронная почта:</label>
+					<input type="text" name="mail" class="form__control" value="ayur00dondokov@gmail.com">
+					<input class="form-checkbox" type="checkbox" name="checkbox-mail">
+
+					<label class="form__label">Адрес:</label>
+					<input type="text" name="address" class="form__control" value="Пушкина 39">
+					<input class="form-checkbox" type="checkbox" name="checkbox-address">
+				</div>
+			<input class="form-button" type="submit" value="Создать визитку" >
+			</form>
+		</div>
+		<div class="card-template">
+			<div class="card">
+				<div class="card__organization"></div>
+				<div class="card__fio"></div>
+				<div class="card__position"></div>
+				<div class="card__contacts">
+					<div class="card__phone"></div>
+					<div class="card__mail"></div>
+					<div class="card__address"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
